@@ -35,5 +35,10 @@ label handytest:
 
     call phone_jlo
 
+    show screen phone
+
+    e "The first is the show screen statement, which displays a screen and lets Ren'Py keep going."
+
+    e "The screen will stay shown until it is hidden."
     
     return
