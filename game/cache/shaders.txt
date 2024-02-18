@@ -1,0 +1,26 @@
+renpy.geometry shaders.circle
+renpy.geometry renpy.texture shader.rounded_corners
+renpy.alpha renpy.geometry renpy.matrixcolor renpy.texture
+renpy.alpha shader.rounded_corners renpy.texture renpy.texture
+renpy.geometry renpy.matrixcolor renpy.solid
+renpy.geometry renpy.texture
+renpy.texture renpy.texture
+renpy.texture
+shader.rounded_corners renpy.texture renpy.texture
+renpy.alpha renpy.solid
+renpy.alpha renpy.geometry renpy.solid
+shaders.circle shaders.circle
+renpy.dissolve renpy.dissolve
+renpy.dissolve renpy.geometry
+renpy.matrixcolor renpy.solid
+renpy.blur renpy.geometry renpy.matrixcolor
+renpy.geometry renpy.matrixcolor renpy.texture
+renpy.matrixcolor renpy.alpha renpy.texture
+renpy.ftl
+renpy.alpha renpy.texture
+renpy.alpha renpy.geometry renpy.texture
+renpy.geometry renpy.solid
+renpy.solid
+renpy.matrixcolor renpy.texture
+renpy.matrixcolor renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+renpy.alpha renpy.geometry renpy.texture shader.rounded_corners
