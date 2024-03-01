@@ -33,6 +33,13 @@ init phone register:
         icon phone.asset("mc_icon.png")
         as my_first_con key "test"
 
+
+init phone register: 
+    define "Picssend":
+        add "mc" add "n"
+        icon phone.asset("natsuki_icon.png")
+        as pics key "picssend" 
+
 label phone_discussion_test:
     phone discussion "ddu":
         time year 2023 month 6 day 5 hour 16 minute 30 delay -1 # exact date and time at which i wrote this. yes i am feeling quite silly and goofy
@@ -77,6 +84,8 @@ default phone_mc = phone.character.Character("MC", phone.asset("mc_icon.png"), "
 # create a group chat manually
 default mc_sayo_gc = phone.group_chat.GroupChat("Sayori", phone.asset("sayori_icon.png"), "mc_sayo"). add_character("mc").add_character("s")
 default mc_sayo_gc_j = phone.group_chat.GroupChat("Jlo", phone.asset("sayori_icon.png"), "mc_sayo_gc_j"). add_character("mc").add_character("j")
+
+
 
 # create another group chat using `init phone register`
 # and add a few messages
@@ -139,6 +148,36 @@ label phone_jlo:
         "mc" "open an issue on {a=https://github.com/Elckarow/Better-EMR-Phone}GitHub{/a},"
         "mc" "make a post on the phone's {a=https://elckarow.itch.io/better-emr-phone}Itch page{/a}."
         "j" "Happy coding!" 
+    
+
+    return
+
+
+label phone_pics:
+    phone discussion "picssend":
+        time year 2023 month 6 day 5 hour 16 minute 30 delay -1 # exact date and time at which i wrote this. yes i am feeling quite silly and goofy
+        "mc" "can you send me a pic"
+        "n" "sure"
+        image"n" phone.asset("mc_icon.png")
+        "mc" "Happy coding!" 
     phone end discussion
 
     return
+
+
+label phone_jlo_again:
+    phone discussion "test":
+        "j" "Hey there again!"
+        "mc" "i am back "
+        "j" "Happy coding!" 
+    call screen phone
+    hide screen phone
+    "mc" "J-Lo is realy crazy"
+    phone end discussion
+
+#   call screen phone
+
+#    hide screen phone
+#    "mc" "J-Lo is realy crazy"
+    return
+

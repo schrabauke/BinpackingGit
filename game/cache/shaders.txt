@@ -1,29 +1,30 @@
-renpy.alpha renpy.texture
-renpy.matrixcolor renpy.texture renpy.texture
-shaders.gradient shaders.gradient
-renpy.blur renpy.geometry renpy.matrixcolor
-renpy.matrixcolor renpy.texture
-renpy.geometry renpy.matrixcolor renpy.solid
-renpy.dissolve renpy.geometry
-renpy.geometry renpy.texture
-renpy.matrixcolor renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
-renpy.solid
-renpy.ftl
-renpy.alpha shader.rounded_corners renpy.texture renpy.texture
 renpy.alpha renpy.geometry renpy.matrixcolor renpy.texture
-renpy.geometry renpy.solid
-renpy.alpha renpy.geometry renpy.texture shader.rounded_corners
-renpy.geometry renpy.matrixcolor renpy.texture
-shader.rounded_corners renpy.texture renpy.texture
-renpy.alpha renpy.geometry renpy.solid
-renpy.alpha renpy.solid
-shaders.circle shaders.circle
+renpy.geometry renpy.matrixcolor renpy.solid
+shaders.gradient shaders.gradient
+renpy.alpha renpy.texture
 renpy.geometry renpy.texture shader.rounded_corners
-renpy.texture
+renpy.alpha shader.rounded_corners renpy.texture renpy.texture
+renpy.alpha renpy.geometry renpy.solid
+renpy.solid
 renpy.matrixcolor renpy.solid
-renpy.geometry shaders.circle
-renpy.texture renpy.texture
-renpy.geometry shaders.gradient
-renpy.dissolve renpy.dissolve
+renpy.dissolve renpy.geometry
+renpy.matrixcolor renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+renpy.alpha renpy.geometry renpy.texture shader.rounded_corners
+shader.rounded_corners renpy.texture renpy.texture
+renpy.geometry renpy.solid
+renpy.geometry renpy.matrixcolor renpy.texture
+renpy.matrixcolor renpy.texture renpy.texture
 renpy.matrixcolor renpy.alpha renpy.texture
 renpy.alpha renpy.geometry renpy.texture
+renpy.geometry shaders.circle
+renpy.ftl
+renpy.texture renpy.texture
+renpy.geometry shaders.gradient
+renpy.texture
+renpy.matrixcolor renpy.texture
+renpy.geometry renpy.texture
+renpy.alpha renpy.solid
+renpy.matrixcolor renpy.matrixcolor renpy.texture
+renpy.blur renpy.geometry renpy.matrixcolor
+shaders.circle shaders.circle
+renpy.dissolve renpy.dissolve

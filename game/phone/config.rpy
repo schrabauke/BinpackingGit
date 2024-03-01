@@ -118,13 +118,13 @@ python early in phone.config:
     }
     
     # How many messages we display at the same time.
-    messages_displayed = 100
+    messages_displayed = 1000
 
     # If the next "load" of messages contains this many or less messages, add those messages to the current load.
     messages_fill_if_lower = 30
 
     # A number of seconds added to the pause before each message.
-    message_delay = 0.6
+    message_delay = 0.5
 
     # An index. The default calendar used when the `phone_calendars` screen is shown.
     # If `True`, tries to retrieve the calendar that's in concordance to `phone.system.get_date()`.

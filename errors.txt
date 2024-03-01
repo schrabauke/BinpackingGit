@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 49: end of line expected.
-    hide screen phone()
-                     ^
+File "game/script.rpy", line 41: end of line expected.
+    show image"Joe" intro.asset("joe_2_free.png")
+                    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sun Feb 18 19:52:54 2024
+Thu Feb 22 16:11:56 2024
