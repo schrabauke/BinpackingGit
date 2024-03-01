@@ -5,10 +5,12 @@
 
 define e = Character("Eileen")
 #define mc = Character("MC")
-define mc = Character("[maname]", color="#f3e40e", image="man.png" , callback=name_callback, cb_name="[maname]") # Main
+define mc = Character("[maname]", color="#f3e40e") # Main Character
+define joe = Character("Joe", color="#0e57f3")
+define mic = Character("Micheal", color="#0ef3a7")
 
 #
-image joe = im.Scale("intro/assets/joe_2_free.png", 1920,1080)
+#image joe = im.Scale("intro/assets/joe_2_free.png", 1920,1080)
 #image scale = im.Scale("imagenacme", 1920,1080)
 # The game starts here.
 
@@ -23,43 +25,48 @@ label start:
             $ maname = maname.strip()
             if not maname:
                 $ maname = "Bill"
-            jump office99
+            jump testroom
         "I'm NOT":
             return
 # Story intro
 
 label testroom:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+#to Do : Anpassen
+    show bg_home_table
+    "Hello fellow gaming intusiast "
+    extend "Thank you for downloading the game. "
+    extend "This game is under active and continous development. "
+    extend "This is an early stage build wich purpose is to present the basics of the game." 
+    "There are many missing contents right now which are to be added in the future builds. " 
+    extend "In the next stages the development focuses on the story writing and filling all the gaps that has been left open." 
+    "If you find any bug or glitch please don't hesitate to contact the Dev Team on the F95 site or leave a comment on the thread."
+    extend " Thank you for your understanding and I wish you a great day."
+    "Have fun."
+    hide bg_home_table
 
     # This ends the game.
 
 
 label joeishere:
     scene office_lobby_2
-    mc "hi welcome"
+    mc " Uhhhh, what a week. \n" 
+    extend "I cant wait when this week is over"
     
-    mc "How is that guy?"
+    mc "Wow, how is that guy?"
     
-    show joe at right
+    show joe_mic at right
     
-    mc "HI Joe"
+    joe "HI my friend, i would love to introduce myself"
+    joe "I am Joe, i bought the company resently"
+
+    show joe_intro
+    $ renpy.pause() 
+
+    mc "he realy looks familiar ..."
+
+    hide joe_intro with dissolve
+
+    mc "Hello Joe, i may call you Joe?"
 
 
 #label handytest:

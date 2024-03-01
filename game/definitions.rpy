@@ -1,17 +1,17 @@
 # Images preload 
 ##Characters
 # Joe
-image joe_intro = Image("images/intro/intro_joe.jpg")
+image joe_intro = im.Scale("images/intro/intro_joe.jpg", 1920,1080)
 image joe_mic = Image("images/intro/joe_Scaled.png")
 
 
 #Micheal
-image 
+image mic = Image("images/Michael.png")
 
 #Locations
 #office
 image office_lobby = Image("images/office_lobby_2.jpg")
-image 
+#image 
 
 
 #home

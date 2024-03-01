@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 43, in script
-    show joe at farright
-  File "game/script.rpy", line 43, in <module>
-    show joe at farright
-NameError: name 'farright' is not defined
+  File "game/script.rpy", line 9, in script
+    define joe = Character(Joe, color="#0e57f3")
+  File "game/script.rpy", line 9, in <module>
+    define joe = Character(Joe, color="#0e57f3")
+NameError: name 'Joe' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 43, in script
-    show joe at farright
-  File "D:\Projekte\Nov\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\Projekte\Nov\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\Projekte\Nov\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\Projekte\Nov\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Projekte\Nov\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+  File "game/script.rpy", line 9, in script
+    define joe = Character(Joe, color="#0e57f3")
+  File "D:\ProgBernd\renpy-8.1.3-sdk\renpy\ast.py", line 2508, in execute
+    self.set()
+  File "D:\ProgBernd\renpy-8.1.3-sdk\renpy\ast.py", line 2522, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\ProgBernd\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 43, in <module>
-    show joe at farright
-NameError: name 'farright' is not defined
+  File "game/script.rpy", line 9, in <module>
+    define joe = Character(Joe, color="#0e57f3")
+NameError: name 'Joe' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.3.23091805
 Handytest 1.0
-Thu Feb 22 16:31:31 2024
+Fri Mar  1 22:44:16 2024
