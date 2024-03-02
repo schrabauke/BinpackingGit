@@ -54,19 +54,14 @@ label joeishere:
     
     mc "Wow, how is that guy?"
     
-    show joe_mic at right
+    show joe_mic at right with moveinright
     
     joe "HI my friend, i would love to introduce myself"
     joe "I am Joe, i bought the company resently"
 
-    show joe_intro
-    $ renpy.pause() 
+    hide joe_mic with moveoutright
 
-    mc "he realy looks familiar ..."
-
-    hide joe_intro with dissolve
-
-    mc "Hello Joe, i may call you Joe?"
+    jump introjoe
 
 
 #label handytest:
@@ -84,5 +79,12 @@ label joeishere:
 #    scene bg room
 #    
 #    call phone_jlo_again
+
+
+#rename any character
+#    $ niname = renpy.input("What is her name?(Default: Nicolette)")
+#    $ niname = niname.strip()
+#    if not niname:
+#        $ niname = "Nicolette"
 
 return
